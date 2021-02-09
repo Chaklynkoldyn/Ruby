@@ -1,80 +1,53 @@
-# Arithmetic
-def sum(a, b)
-  a + b
-end
-puts sum(10, 15)
+class Comparasion
 
-def sub(a, b)
-  a - b
-end
-puts sub(23, 14)
+  def ==(a, b)
+      a==b
+  end
 
-def mult(a, b)
-  a * b
-end
-puts mult(9, 15)
+  def !=(a, b)
+    a != b
+  end
 
-def div(a, b)
-  a / b
-end
-puts div(30.0, 9.0)
+  def  >(a, b)
+     a > b
+  end
 
-def modulus(a, b)
-  a % b
-end
-puts modulus(10, 6)
+  def  <(a, b)
+     a < b
+  end
 
-def exp(a, b)
-  a ** b
-end
-puts exp(3, 5)
-#Comparison
-def indentity(a, b)
-  a==b
-end
-puts indentity(10, 10)
+  def >=(a, b)
+    a >= b
+  end
 
-def diff(a, b)
-  a != b
-end
-puts diff(10, 10)
+  def  <=(a,b)
+     a <=b
+  end
 
-def big(a, b)
-  a > b
-end
-puts big(15, 10)
+  def <=>(a, b)
+   a <=> b
+  end
 
-def less(a, b)
-  a < b
-end
-puts less(15, 10)
+  def ===(a, b)
+   a === b
+  end
 
-def bigOrEqual(a, b)
-  a >= b
-end
-puts bigOrEqual(6, 6)
-
-def lessOrEqual(a,b)
-  a <=b
-end
-puts lessOrEqual(2, 3)
-
-def compOp(a, b)
-  a <=> b
-end
-puts compOp(4, 5)
-
-def average(a, b)
-  a === b
-end
-puts average(1, 10)
-
-def eqlTypeResult(a, b)
+  def eql?(a, b)
   a .eql? b
-end
-puts eqlTypeResult(2.0, 2.0)
+  end
 
-def eqlObjId(a, b)
-a .equal? b
+  def equal?(a, b)
+  a .equal? b
+  end
 end
-puts eqlObjId(3, 3)
+comparasion = Comparasion.new
+puts comparasion.==(21, 21)
+puts comparasion.!=(21, 21)
+puts comparasion.>(5, 6)
+puts comparasion.<(5, 6)
+puts comparasion.>=(5, 5)
+puts comparasion.<=(4, 5)
+puts comparasion.<=>(1, -2)
+puts comparasion.===(3, 3)
+puts comparasion.eql?(-2, -2)
+puts comparasion.equal?(4, 2)
