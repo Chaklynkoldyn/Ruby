@@ -1,19 +1,39 @@
-time = Time.new
-puts time
-momentOfBirth = Time.mktime(2003, 5, 29, 10 , 30)
-puts ('The moment when I was born ' + momentOfBirth.to_s)
 
-class Die
-  def roll
-    1 + rand(6)
-  end
+
+class Arithmetic
+
+def +(a, b)
+   a + b
+ end
+
+ def -(a, b)
+   a - b
+ end
+
+ def *(a, b)
+   a * b
+ end
+
+ def /(a, b)
+   a / b
+ end
+
+
+ def %(a, b)
+   a % b
+ end
+
+
+ def **(a, b)
+   a ** b
+ end
 
 end
+arithmetic = Arithmetic.new()
 
-
-dice = [Die.new, Die.new]
-
-
-dice.each do |die|
-  puts die.roll
-end
+puts arithmetic.+(23, 32)
+puts arithmetic.-(37, 93)
+puts arithmetic.*(12, 12)
+puts arithmetic./(48, 8)
+puts arithmetic.%(7, 4)
+puts arithmetic.**(3, 4)
