@@ -1,11 +1,11 @@
 class Comparasion
 
   def ==(a, b)
-      a==b
+     a==b
   end
 
   def !=(a, b)
-    a != b
+     a != b
   end
 
   def  >(a, b)
@@ -17,7 +17,7 @@ class Comparasion
   end
 
   def >=(a, b)
-    a >= b
+     a >= b
   end
 
   def  <=(a,b)
@@ -25,7 +25,7 @@ class Comparasion
   end
 
   def <=>(a, b)
-   a <=> b
+     a <=> b
   end
 
   def ===(a, b)
@@ -40,14 +40,16 @@ class Comparasion
   a .equal? b
   end
 end
+
 comparasion = Comparasion.new
-puts comparasion.==(21, 21)
-puts comparasion.!=(21, 21)
-puts comparasion.>(5, 6)
-puts comparasion.<(5, 6)
-puts comparasion.>=(5, 5)
-puts comparasion.<=(4, 5)
-puts comparasion.<=>(1, -2)
-puts comparasion.===(3, 3)
-puts comparasion.eql?(-2, -2)
-puts comparasion.equal?(4, 2)
+
+puts 'a is identical to b = ' + comparasion.==(21, 21).to_s
+puts 'a is not identical to b = ' + comparasion.!=(21, 21).to_s
+puts 'a is bigger than b = ' + comparasion.>(5, 6).to_s
+puts 'a less than b = ' + comparasion.<(5, 6).to_s
+puts 'a is bigger or identical to b = ' + comparasion.>=(5, 5).to_s
+puts 'a less or identical to b = ' + comparasion.<=(4, 5).to_s
+puts 'The result of a<=>b = ' + comparasion.<=>(1, -2).to_s
+puts 'The result of a===b = ' + comparasion.===((1...10), 9).to_s
+puts 'a .eql? b = ' + comparasion.eql?(-2, -2.0).to_s
+puts 'a .equal? b = ' + comparasion.equal?(4, 4).to_s
