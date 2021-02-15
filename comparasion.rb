@@ -29,15 +29,15 @@ class Comparasion
   end
 
   def ===(a, b)
-   a === b
+     a === b
   end
 
   def eql?(a, b)
-  a .eql? b
+     a .eql? b
   end
 
   def equal?(a, b)
-  a .equal? b
+     a .equal? b
   end
 end
 
