@@ -44,19 +44,18 @@ puts ''
 # умножить елементы на 2 потом на 4
 puts 'Умножить массив на 2'
 arr = [1,2,4,6,8]
-arr.each do |n|
-  puts n * 2
-end
+puts arr.map{|elem| elem*2}
 puts ''
 puts 'Умножить массив на 4'
-arr.each do |n|
-  puts n * 4
-end
+puts arr.map{ |elem| elem*4 }
 puts ''
 # определить количество аргументов
 puts 'Количество элементов'
 arr = [1,4,5,7,8,9,0,10]
 puts arr.length
+puts ''
+puts 'Количество элементов (2 вариант)'
+puts arr.size
 puts ''
 # удалить последний елемент
 puts 'Удаление последнего элемента'
