@@ -1,35 +1,35 @@
 class Arithmetic
 
-  def +(a, b)
+  def sum(a, b)
     a + b
   end
 
-  def -(a, b)
+  def sub(a, b)
     a - b
   end
 
-  def *(a, b)
+  def mult(a, b)
     a * b
   end
 
-  def /(a, b)
+  def div(a, b)
     a / b
   end
 
-  def %(a, b)
+  def rem(a, b)
     a % b
   end
 
-  def **(a, b)
+  def deg(a, b)
     a ** b
   end
 end
 
 arithmetic = Arithmetic.new()
 
-puts 'Summa of a and b = ' + arithmetic.+(23, 32).to_s
-puts 'Subtraction of a and b = ' + arithmetic.-(37, 93).to_s
-puts 'Multiplication of a and b = ' + arithmetic.*(12, 12).to_s
-puts 'Division of a and b = ' + arithmetic./(48, 8).to_s
-puts 'The remainder of division of a and b = ' + arithmetic.%(7, 4).to_s
-puts 'a to b degrees = ' + arithmetic.**(3, 4).to_s
+puts 'Summa of a and b = ' + arithmetic.sum(23, 32).to_s
+puts 'Subtraction of a and b = ' + arithmetic.sub(37, 93).to_s
+puts 'Multiplication of a and b = ' + arithmetic.mult(12, 12).to_s
+puts 'Division of a and b = ' + arithmetic.div(48, 8).to_s
+puts 'The remainder of division of a and b = ' + arithmetic.rem(7, 4).to_s
+puts 'a to b degrees = ' + arithmetic.deg(3, 4).to_s
