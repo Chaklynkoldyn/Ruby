@@ -6,51 +6,51 @@ class MyArray
   end
 
   def size
-   arr.size
+   array.size
   end
 
   def reverse
-    arr.reverse
+    array.reverse
   end
 
   def max
-    arr.max
+    array.max
   end
 
   def min
-    arr.min
+    array.min
   end
 
   def desc
-    arr.desc
+    array.desc
   end
 
   def asc
-    arr.asc
+    array.asc
   end
 
   def odd
-    arr.odd
+    array.odd
   end
 
   def multiple_to_three
-    arr.multiple_to_three
+    array.multiple_to_three
   end
 
   def uniq
-    arr.uniq
+    array.uniq
   end
 
   def devide_on_ten
-    arr.devide_on_ten
+    array.devide_on_ten
   end
 
   def chars
-    arr.chars
+    array.chars
   end
 
   def switch
-    arr.switch
+    array.switch
   end
 
   def before_min
