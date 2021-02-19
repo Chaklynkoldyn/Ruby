@@ -22,19 +22,19 @@ class MyArray
   end
 
   def desc
-    array.desc
+    array.sort.reverse
   end
 
   def asc
-    array.asc
+    array.sort
   end
 
   def odd
-    array.odd
+    array.select(&:odd?)
   end
 
   def multiple_to_three
-    array.multiple_to_three
+    array.select{|x| x%3==0}
   end
 
   def uniq
@@ -42,22 +42,27 @@ class MyArray
   end
 
   def devide_on_ten
-    array.devide_on_ten
+    array.map{|x| x/10.to_f}
   end
 
   def chars
-    array.chars
+     array.map{|x| (9 + x).to_s(36)}
   end
 
   def switch
-    array.switch
+    i = array.each_with_index.min[1]
+    j = array.each_with_index.max[1]
+    array[i],array[j]=array[j],array[i]
   end
 
   def before_min
-    arr.before_min
+   a = array.index(array.min)
+   array[0...a]
   end
 
   def three_smallest
-    arr.three_smallest
+    a = array.min(1)
+    b = array.min(2)
+    c = array.min(3)
   end
 end
