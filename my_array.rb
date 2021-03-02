@@ -5,7 +5,7 @@ class MyArray
     @array = arr
   end
 
-  def size
+   def size
    array.size
   end
 
@@ -50,9 +50,12 @@ class MyArray
   end
 
   def switch
-    i = array.each_with_index.min[1]
-    j = array.each_with_index.max[1]
-    array[i],array[j]=array[j],array[i]
+    array1=array
+  puts "new array with change min and max"
+  i = array1.each_with_index.min[1]
+  j = array1.each_with_index.max[1]
+  array1[i],array1[j]=array1[j],array1[i]
+  print array1, "\n"
   end
 
   def before_min
@@ -65,4 +68,5 @@ class MyArray
     b = array.min(2)
     c = array.min(3)
   end
+
 end
