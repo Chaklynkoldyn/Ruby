@@ -34,11 +34,11 @@ class MyHash
   end
 
   def sort_key
-    hash.keys.sort
+    hash.sort_by{|k, v| k}.to_h
   end
 
   def sort_value
-    hash.values.sort
+    hash.sort_by{|k, v| v}.to_h
   end
 
   def switch
@@ -49,9 +49,9 @@ class MyHash
     hash.merge(other_hash)
   end
 
-  def count_of_odd
+  def count_of_even
     hash.count{|key, value| value.even?}
   end
 end
-h = MyHash.new({"a" => 100, "b" => 200, "c" => 300, "d" => 293})
-puts h.count_of_odd
+h = MyHash.new({"a" => 100, "d" => 300, "b" => 5, "c" => 293})
+puts h.sort_key
